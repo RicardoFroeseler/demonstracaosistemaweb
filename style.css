@@ -1,0 +1,174 @@
+html, body {
+    overflow: hidden; /* Desabilita a barra de rolagem */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1d1d1d; /* Cor de fundo atualizada */
+}
+
+header {
+    background-color: #1d1d1d;
+    color: white;
+    padding: 5px 20px; /* Redução do padding */
+    text-align: center;
+    font-size: 16px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+nav {
+    padding: 5px 20px; /* Menor padding para reduzir altura */
+    text-align: center; /* Centraliza os botões se necessário */
+}
+
+nav button {
+    margin: 2px; /* Espaçamento reduzido entre os botões */
+    padding: 6px 12px; /* Padding interno dos botões reduzido */
+    background-color: #f0f0f0; /* Cor de fundo dos botões */
+    border: none; /* Sem bordas */
+    border-radius: 4px; /* Bordas arredondadas para estética */
+    cursor: pointer; /* Cursor de ponteiro para indicar clicabilidade */
+    font-size: 14px; /* Menor tamanho de fonte para os botões */
+    color: #1d1d1d; /* Cor do texto dos botões para combinar com o fundo */
+}
+
+nav button:hover {
+    background-color: #ccc; /* Cor de fundo ao passar o mouse */
+}
+
+#main-content {
+    margin: 10px; /* Margem reduzida */
+}
+
+iframe {
+    width: 100%; /* Largura total */
+    height: calc(100vh - 120px); /* Altura dinâmica baseada na altura da viewport */
+    border: none; /* Remove a borda do iframe */
+}
+
+.style_button {
+    background-color: #f89d00;
+    font-weight: 700;
+    color: #f0f0f0;
+    border-radius: 10px;
+}
+
+#meuIframe {
+    border-radius: 15px;
+}
+
+.title{
+   color: #f89d00;
+}
+
+
+/* Estilos do botão flutuante do WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 900px;
+    right: 20px;
+    background-color: #25D366;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    
+}
+
+.whatsapp-float a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-decoration: none; /* Remover sublinhado do link */
+}
+
+.whatsapp-icon {
+    color: white;
+    font-size: 35px;
+}
+
+.whatsapp-float:hover {
+    background-color: #20c354;
+    cursor: pointer;
+}
+
+#ICONEWHATSAPP{
+    font-size: 36px;
+    color: #f0f0f0;
+}
+
+
+/* Estilos para o popup */
+.popup {
+    display: none; /* Inicialmente oculto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escurecido */
+    z-index: 1000; /* Aparecer acima de outros elementos */
+}
+
+/* Conteúdo do popup */
+.popup-content {
+    background-color: white;
+    margin: 15% auto; /* Centraliza o popup vertical e horizontalmente */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Botão para fechar o popup */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #000;
+}
+
+.copy-container {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copy-container label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #f89d00;
+}
+
+.copy-container input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 300px;
+    text-align: center;
+    margin-right: 10px;
+    background-color: #f0f0f0;
+    color: #1d1d1d;
+}
+
+.copy-button {
+    padding: 5px 10px;
+    background-color: #f89d00;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.copy-button:hover {
+    background-color: #e08700;
+}

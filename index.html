@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Minha Página com Iframe</title>
+    <!-- icones -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- REMIX ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h3 class="title">Materprint Assistência Técnica LTDA</h3>
+        <h6>Teste com este usuario e senha</h6>
+        
+        <!-- Campo de cópia para o usuário -->
+        <div class="copy-container">
+            <label for="userField">Usuário:</label>
+            <input type="text" id="userField" value="sistemaweb@materprint.com.br" readonly>
+            <button onclick="copyToClipboard('userField')" class="copy-button">Copiar Usuário</button>
+        </div>
+
+        <!-- Campo de cópia para a senha -->
+        <div class="copy-container">
+            <label for="passwordField">Senha:</label>
+            <input type="text" id="passwordField" value="v7FnRzbt" readonly>
+            <button onclick="copyToClipboard('passwordField')" class="copy-button">Copiar Senha</button>
+        </div>
+    </header>
+
+    <nav>
+        <button class="style_button" onclick="window.open('http://link2.com', '_blank')">Site</button>
+        <button class="style_button" onclick="toggleFullScreen()">Tela Cheia</button>
+        <button class="style_button" onclick="window.open('http://link4.com', '_blank')">Tutoriais</button>
+        <button class="style_button" onclick="window.open('https://api.whatsapp.com/send/?phone=5531985266186&text=Ola%2C+estou+entrando+em+contato+direto+do+aplicativo+venda+mais%21&type=phone_number&app_absent=0', '_blank', 'width=800,height=600,left=100,top=100,scrollbars=no')">
+            <i class="fa-brands fa-whatsapp"></i>Orçamento
+        </button>
+        <button class="style_button" onclick="abrirEmTelaCheia()">Abrir em Nova Janela</button>
+    </nav>
+
+    <!-- Estrutura do popup -->
+    <div id="infoPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Informações Importantes</h2>
+            <p>Aqui estão algumas informações que você gostaria de compartilhar no popup.</p>
+        </div>
+    </div>
+
+    <section id="main-content">
+        <iframe src="https://vendamais.tiappstecnologia.com.br" frameborder="0" style="width: 100%; height: 800px;" id="meuIframe"></iframe>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="fullscreem.js"></script>
+</body>
+</html>
